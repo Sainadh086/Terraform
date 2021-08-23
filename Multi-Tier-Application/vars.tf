@@ -25,3 +25,11 @@ variable "port" {
 variable "security_group_id" {
     default = "sg-08bc3db4e47b81483"
 }
+
+variable "desired_count" {
+  default = 1
+}
+
+variable "allocated_storage" {
+  default = 5
+}
