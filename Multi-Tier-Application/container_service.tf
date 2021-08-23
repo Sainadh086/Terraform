@@ -40,16 +40,6 @@ resource "aws_ecs_service" "wpService" {
     launch_type = "FARGATE"
     scheduling_strategy = "REPLICA"
     desired_count = var.desired_count
-
-    deployment_minimum_healthy_percent = 50
-    deployment_maximum_percent         = 100
-   /*load_balancer {
-      target_group_arn = "${aws_lb_target_group.target_group.arn}" 
-      container_name   = "${aws_ecs_task_definition.wpcontainer.family}"
-      container_port   = var.port
-        }*/
-
-
     network_configuration {
       subnets          = ["${aws_default_subnet.default_subnet_a.id}", "${aws_default_subnet.default_subnet_b.id}", "${aws_default_subnet.default_subnet_c.id}"]
       assign_public_ip = true
