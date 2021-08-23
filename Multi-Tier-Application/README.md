@@ -1,6 +1,6 @@
 # Multi-Tier Application
 
-Launches a MySql Database in Relational Data Services(RDS) and an Wordpress Image in Elastic Container Service.
+Launches a MySql Database in Relational Database Services(RDS) and an Wordpress Image in Elastic Container Service.
 
 ## Overview
     - Create a MySQL Database
@@ -12,7 +12,7 @@ Launches a MySql Database in Relational Data Services(RDS) and an Wordpress Imag
 
 ## Output
     - Deploys a MySql Database in RDS.
-    - Creates a Elastic Container Service(ECS), Cluster, Task Definition, Service, and Fargate Instances.
+    - Creates an ECS Cluster, Task Definition, Service, and Fargate Instances.
     - Deploys a Wordpress Image in an Elastic Container Service.
     - In total there are 9 resources created.
 
