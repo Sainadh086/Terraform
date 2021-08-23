@@ -4,3 +4,4 @@
 /*/.terraform/*
 /*/.terraform/*.hcl
 /*/loadbalancer.tf
+terraform.tfstate
